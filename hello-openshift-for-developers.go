@@ -9,7 +9,7 @@ import (
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	response := os.Getenv("RESPONSE")
 	if len(response) == 0 {
-		response = "Hello All you out there!"
+		response = "Hello All you out there OpenAI is here to get you!"
 	}
 
 	fmt.Fprintln(w, response)
